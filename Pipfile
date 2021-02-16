@@ -7,6 +7,8 @@ name = "pypi"
 census = "*"
 us = "*"
 jupyter = "*"
+splinter = "*"
+chromedriver-binary = "*"
 
 [dev-packages]
 

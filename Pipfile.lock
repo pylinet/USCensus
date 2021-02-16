@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9effe105c58566b3a8818af39925ebf7b9d1d69d40d63719791e6f2ff14cfecc"
+            "sha256": "62073d1a18cb7bc1b36ffcb6e11ee70613dedb6d3fa60ece3532c639e70b5b06"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -134,6 +134,13 @@
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
             "version": "==4.0.0"
+        },
+        "chromedriver-binary": {
+            "hashes": [
+                "sha256:22ed24e990a35d197dd9280b9be2ba74988eeb977a3b1a808597e9e3fd5a6304"
+            ],
+            "index": "pypi",
+            "version": "==89.0.4389.23.0"
         },
         "colorama": {
             "hashes": [
@@ -528,6 +535,7 @@
                 "sha256:b25e5d339550a850f7e919fe8cb4c8eabe4c917613db48dab3df19bfb9a28969",
                 "sha256:b62ea18c0458a65ccd5be90f276f7a5a3f26a6dea0066d948ce2fa896051420f",
                 "sha256:c0cde362075ee8f3d2b0353b283e203c2200243b5a15d5c5c03b78112a17e7d4",
+                "sha256:c5e29fe4678f97ce429f076a2a049a3d0b2660ada8f2c621e5dc9939426056dd",
                 "sha256:d18ddc6741b51f3985978f2fda57ddcdae359662d7a6b395bc8ff2292fca14bd",
                 "sha256:da7d4d4c778c86b60949d17531e60c54ed3726878de8a7f8a6d6e7f8cc8c3205",
                 "sha256:f52070871a0fd90a99130babf21f8af192304ec1e995bec2a9533efc21ea4452",
@@ -561,6 +569,13 @@
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
             "version": "==2.25.1"
         },
+        "selenium": {
+            "hashes": [
+                "sha256:2d7131d7bc5a5b99a2d9b04aaf2612c411b03b8ca1b1ee8d3de5845a9be2cb3c",
+                "sha256:deaf32b60ad91a4611b98d8002757f29e6f2c2d5fcaf202e1c9ad06d6772300d"
+            ],
+            "version": "==3.141.0"
+        },
         "send2trash": {
             "hashes": [
                 "sha256:60001cc07d707fe247c94f74ca6ac0d3255aabcb930529690897ca2a39db28b2",
@@ -575,6 +590,14 @@
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==1.15.0"
+        },
+        "splinter": {
+            "hashes": [
+                "sha256:459e39e7a9f7572db6f1cdb5fdc5ccfc6404f021dccb969ee6287be2386a40db",
+                "sha256:7e5e69c5b76ada909283465cdc3636e2632f7e557932ce96ab9c0432b0b32f7f"
+            ],
+            "index": "pypi",
+            "version": "==0.14.0"
         },
         "terminado": {
             "hashes": [
