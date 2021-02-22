@@ -8,6 +8,7 @@ census = "*"
 us = "*"
 jupyter = "*"
 splinter = "*"
+pytest = "*"
 
 [dev-packages]
 

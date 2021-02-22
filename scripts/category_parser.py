@@ -1,10 +1,17 @@
 
-# def parsers = [
+def extract_int(t):
+    """extracts the value from a string param as int
 
-# ]
+    Args:
+        t (string): parameter string to extract from
 
-
-class bedroom_checker:
+    Returns:
+        int: value as an int
+    """
+    num_string = t.split(':')[1].strip()
+    return int(num_string)
+    
+class bedrooms_checker:
     """ checks and parses for number of bedrooms
     """
     
@@ -26,7 +33,33 @@ class bedroom_checker:
             t (string): string containing bedroom parameter
 
         Returns:
-            num: number of bedrooms
+            int: number of bedrooms
         """
-        return t.split(':')[1].strip()
+        return extract_int(t)
 
+
+class bathrooms_checker:
+    """checks and parses for number of bathrooms
+    """
+    def check(t):
+        """checks if text contains bathroom parameter
+
+        Args:
+            t (string): string to check
+
+        Returns:
+            bool: if text matches parameter
+        """
+        return t.split(':')[0] == 'Number of Bathrooms'
+
+    def parse(t):
+        """parses number of bathrooms from string
+
+        Args:
+            t (string): string containing bathroom parameter
+
+        Returns:
+            int: number of bathrooms
+        """
+        return extract_int(t)
+    
