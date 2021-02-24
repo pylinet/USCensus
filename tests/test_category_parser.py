@@ -76,7 +76,7 @@ def test_jr_mid_school_checker():
 
     assert jr_mid_school_checker.check(test_string) == True
 
-    assert jr_mid_school_checker.parse(test_string) == "Jr High / Middle School: Hicksville Middle School"
+    assert jr_mid_school_checker.parse(test_string) == "Hicksville Middle School"
 
 def test_jr_mid_school_district_checker():
     test_string = "Jr High / Middle School District: Hicksville"
@@ -116,6 +116,13 @@ def test_tax_amount_checker():
     assert tax_amount_checker.check(test_string) == True
 
     assert tax_amount_checker.parse(test_string) == 8479
+
+def test_building_area_unit_checker():
+    test_string = "Building Area Units: Square Feet"
+
+    assert building_area_unit_checker.check(test_string) == True
+
+    assert building_area_unit_checker.parse(test_string) == "Square Feet"
 
 
 
