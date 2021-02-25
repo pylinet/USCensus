@@ -9,6 +9,7 @@ us = "*"
 jupyter = "*"
 pandas = "*"
 ipykernel = "*"
+requests = "*"
 
 [dev-packages]
 
