@@ -10,6 +10,7 @@ jupyter = "*"
 pandas = "*"
 ipykernel = "*"
 requests = "*"
+matplotlib = "*"
 
 [dev-packages]
 
