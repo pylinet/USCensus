@@ -1,8 +1,6 @@
 import re
 import copy
 
-
-
 def extract_int(t):
     """extracts the value from a string param as int
 
@@ -247,9 +245,10 @@ class trulia_parser:
 
     category_checkers = category_checkers
 
-    def __init__(self, browser, link):
+    def __init__(self, browser, link, schema):
         self.browser = browser
         self.link = link
+        self.schema = schema
 
     def parse_page(self):
         # 1. go to target page
@@ -259,6 +258,9 @@ class trulia_parser:
         # 3. get structured categories
         structured_categories = self.browser.find_by_xpath('//div[@data-testid="structured-amenities-table-category"]')
         listing = {}
+        page_params = self.parse_page_params()
+        listing.update(page_params)
+
         for c in structured_categories:
             category_parameters = c.find_by_tag('li')
             props = self.parse_categories(list(map(lambda x:x.text, category_parameters)))
@@ -268,7 +270,15 @@ class trulia_parser:
         
         # 4. parse parameters
 
-        
+    def parse_page_params(self):
+        listed_price = self.browser.find_by_xpath("//h3[@data-testid='on-market-price-details']")[0].value
+        address_street = self.browser.find_by_xpath("//span[@data-testid='home-details-summary-headline']")[0].value
+        address_city_state = self.browser.find_by_xpath("//span[@data-testid='home-details-summary-city-state']")[0].value
+        return {
+            'listed_price': listed_price,
+            'address_street' : address_street,
+            'address_city_state': address_city_state
+        }
 
     def parse_categories(self, category_parameters):
         result = {}

@@ -1,0 +1,183 @@
+[
+    {
+        "name": "address_street",
+        "description": "street address of the property",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "address_city_state",
+        "description": "city, state, and zip address of the property",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "listed_price",
+        "description": "listed price of the property",
+        "type": "INT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "building_area",
+        "description": "area of the interior",
+        "type": "INT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "basement_features",
+        "description": "list of basement features",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bedrooms",
+        "description": "number of bedrooms",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bathrooms",
+        "description": "number of bathrooms", 
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "full_bathrooms",
+        "description": "number of full bathrooms",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "appliances_list",
+        "description": "comma separated list of appliances",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flooring_type",
+        "description": "type of flooring in the house",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "garage_spaces",
+        "description": "number of spaces in the garage",
+        "type": "INT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "parking_features",
+        "description": "comma separated list of parking features",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "sewer_type",
+        "description": "type of sewer on the property",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "year_built",
+        "description": "year the property is built",
+        "type": "INT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "construction_materials",
+        "description": "comma separated list of construction materials",
+        "type":"STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "property_type",
+        "description": "type of property",
+        "type":"STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "property_subtype",
+        "description": "subtype of property",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "mls_status",
+        "description": "listed status on mls",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "listing_status",
+        "description": "listing status",
+        "type":"STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "virtual_tour_url",
+        "description": "link to a virtual tour of the home",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "mls_id",
+        "description": "MLS/Source ID",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "elementary_school",
+        "description": "elementary school",
+        "type":"STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "elementary_school_district",
+        "description": "elementary school district",
+        "type":"STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "jr_mid_school",
+        "description": "Jr High/Middle School",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "jr_mid_school_district",
+        "description": "Jr High/Middle School District",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "high_school",
+        "description": "Jr High/Middle School",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "high_school_district",
+        "description": "Jr High/Middle School District",
+        "type": "STRING",
+        "mode": "NULLABLE"
+
+    },
+    {
+        "name": "lot_area",
+        "description": "property lot area (usually in acres)",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "tax_block",
+        "description": "tax block",
+        "type":"STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "tax_lot",
+        "description": "tax lot",
+        "type":"STRING",
+        "mode": "NULLABLE"
+    }
+]
