@@ -9,6 +9,9 @@ us = "*"
 jupyter = "*"
 splinter = "*"
 pytest = "*"
+pandas = "*"
+ipykernel = "*"
+requests = "*"
 
 [dev-packages]
 
