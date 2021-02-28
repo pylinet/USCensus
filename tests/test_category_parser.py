@@ -1,4 +1,4 @@
-from scripts.category_parser import *
+from scripts.trulia_scraper import *
 
 
 def test_bedroom_checker():

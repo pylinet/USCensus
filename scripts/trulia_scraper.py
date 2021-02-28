@@ -241,37 +241,55 @@ category_checkers = [
     jr_mid_school_district_checker,
     tax_amount_checker
 ]
-class trulia_parser:
+
+
+
+class listing:
 
     category_checkers = category_checkers
 
-    def __init__(self, browser, link, schema):
+    def __init__(self, browser, schema, url):
         self.browser = browser
-        self.link = link
+        self.url = url
         self.schema = schema
 
     def parse_page(self):
         # 1. go to target page
-        self.browser.visit(self.link)
+        self.browser.visit(self.url)
         # 2. expand all amenities
         self.browser.find_by_xpath('//button[@data-testid="structured-amenities-table-see-all-button"]').click()
-        # 3. get structured categories
-        structured_categories = self.browser.find_by_xpath('//div[@data-testid="structured-amenities-table-category"]')
-        listing = {}
+        # 3. instantiate the listing object
+        listing = {
+            'url': self.url
+        }
+        # 4. scrape page parameters
         page_params = self.parse_page_params()
         listing.update(page_params)
 
+        # 5. scrape structured categories
+        structured_categories = self.browser.find_by_xpath('//div[@data-testid="structured-amenities-table-category"]')
         for c in structured_categories:
             category_parameters = c.find_by_tag('li')
             props = self.parse_categories(list(map(lambda x:x.text, category_parameters)))
             listing.update(props)
 
-        return listing
-        
-        # 4. parse parameters
+        return self.transform_to_schema(listing)
+    
+    def transform_to_schema(self, listing):
+        l = {}
+        for k in self.schema:
+            if(k['name'] in listing):
+                l[k['name']] = listing[k['name']]
+            else:
+                l[k['name']] = None
+        return l
 
     def parse_page_params(self):
+        # unpack listed price into a number
         listed_price = self.browser.find_by_xpath("//h3[@data-testid='on-market-price-details']")[0].value
+        listed_price = listed_price.split('$')[1].split(',')
+        listed_price = ''.join(listed_price)
+        listed_price = int(listed_price)
         address_street = self.browser.find_by_xpath("//span[@data-testid='home-details-summary-headline']")[0].value
         address_city_state = self.browser.find_by_xpath("//span[@data-testid='home-details-summary-city-state']")[0].value
         return {

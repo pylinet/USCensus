@@ -18,6 +18,12 @@
         "mode": "NULLABLE"
     },
     {
+        "name": "days_on_market",
+        "description": "days on market as provided by the site",
+        "type": "INT",
+        "mode": "NULLABLE"
+    },
+    {
         "name": "building_area",
         "description": "area of the interior",
         "type": "INT",
