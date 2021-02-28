@@ -10,7 +10,7 @@ def extract_int(t):
     Returns:
         int: value as an int
     """
-    num_string = t.split(':')[1].strip()
+    num_string = re.sub("\D", "", t) 
     return int(num_string)
     
 class bedrooms_checker:
@@ -242,69 +242,86 @@ category_checkers = [
     tax_amount_checker
 ]
 
+def parse_categories(category_parameters, category_checkers):
+    result = {}
+    checkers = copy.copy(category_checkers)
+    params = copy.deepcopy(category_parameters)
+    for p in params:
+        for i, c in enumerate(checkers):
+            if c.check(p):
+                result[c.property] = c.parse(p)
+                checkers.pop(i)
+    return result
+
+def parse_page_params(browser):
+    # unpack listed price into a number
+    listed_price = browser.find_by_xpath("//h3[@data-testid='on-market-price-details']")[0].value
+    listed_price = listed_price.split('$')[1].split(',')
+    listed_price = ''.join(listed_price)
+    listed_price = int(listed_price)
+    address_street = browser.find_by_xpath("//span[@data-testid='home-details-summary-headline']")[0].value
+    address_city_state = browser.find_by_xpath("//span[@data-testid='home-details-summary-city-state']")[0].value
+    return {
+        'listed_price': listed_price,
+        'address_street' : address_street,
+        'address_city_state': address_city_state
+    }
+
+def transform_to_schema(dictionary, schema):
+    l = {}
+    for k in schema:
+        if(k['name'] in dictionary):
+            l[k['name']] = dictionary[k['name']]
+        else:
+            l[k['name']] = None
+    return l
+
+def parse_page(browser, schema, url):
+    # 1. go to target page
+    browser.visit(url)
+    # 2. expand all amenities
+    browser.find_by_xpath('//button[@data-testid="structured-amenities-table-see-all-button"]').click()
+    # 3. instantiate the listing object
+    listing = {
+        'url': url
+    }
+    # 4. scrape page parameters
+    page_params = parse_page_params(browser)
+    listing.update(page_params)
+
+    # 5. scrape structured categories
+    structured_categories = browser.find_by_xpath('//div[@data-testid="structured-amenities-table-category"]')
+    for c in structured_categories:
+        category_parameters = c.find_by_tag('li')
+        props = parse_categories(list(map(lambda x:x.text, category_parameters)), category_checkers)
+        listing.update(props)
+
+    return transform_to_schema(listing, schema)
+
+def get_listing_urls_by_state_city(browser, state, city):
+    url_root = 'https://www.trulia.com'
+
+    url = url_root + '/' + state + '/' + city
+    browser.visit(url)
+    listings = browser.find_by_xpath('//a[@data-testid="home-marker"]')
+    return list(map(lambda x: x['href'], listings))
 
 
-class listing:
+def get_listings_by_state_city(browser, schema, state, city):
 
-    category_checkers = category_checkers
+    listing_urls = get_listing_urls_by_state_city(browser, state, city)
+    listing_urls = listing_urls[:10]
 
-    def __init__(self, browser, schema, url):
-        self.browser = browser
-        self.url = url
-        self.schema = schema
+    home_data = []
+    for url in listing_urls:
+        data = parse_page(browser, schema, url)
+        home_data.append(data)
+    return home_data
 
-    def parse_page(self):
-        # 1. go to target page
-        self.browser.visit(self.url)
-        # 2. expand all amenities
-        self.browser.find_by_xpath('//button[@data-testid="structured-amenities-table-see-all-button"]').click()
-        # 3. instantiate the listing object
-        listing = {
-            'url': self.url
-        }
-        # 4. scrape page parameters
-        page_params = self.parse_page_params()
-        listing.update(page_params)
 
-        # 5. scrape structured categories
-        structured_categories = self.browser.find_by_xpath('//div[@data-testid="structured-amenities-table-category"]')
-        for c in structured_categories:
-            category_parameters = c.find_by_tag('li')
-            props = self.parse_categories(list(map(lambda x:x.text, category_parameters)))
-            listing.update(props)
 
-        return self.transform_to_schema(listing)
+
     
-    def transform_to_schema(self, listing):
-        l = {}
-        for k in self.schema:
-            if(k['name'] in listing):
-                l[k['name']] = listing[k['name']]
-            else:
-                l[k['name']] = None
-        return l
 
-    def parse_page_params(self):
-        # unpack listed price into a number
-        listed_price = self.browser.find_by_xpath("//h3[@data-testid='on-market-price-details']")[0].value
-        listed_price = listed_price.split('$')[1].split(',')
-        listed_price = ''.join(listed_price)
-        listed_price = int(listed_price)
-        address_street = self.browser.find_by_xpath("//span[@data-testid='home-details-summary-headline']")[0].value
-        address_city_state = self.browser.find_by_xpath("//span[@data-testid='home-details-summary-city-state']")[0].value
-        return {
-            'listed_price': listed_price,
-            'address_street' : address_street,
-            'address_city_state': address_city_state
-        }
 
-    def parse_categories(self, category_parameters):
-        result = {}
-        checkers = copy.copy(self.category_checkers)
-        params = copy.deepcopy(category_parameters)
-        for p in params:
-            for i, c in enumerate(checkers):
-                if c.check(p):
-                    result[c.property] = c.parse(p)
-                    checkers.pop(i)
-        return result
+
