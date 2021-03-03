@@ -1,5 +1,11 @@
 [
     {
+        "name": "source_url",
+        "description": "property",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    }
+    {
         "name": "address_street",
         "description": "street address of the property",
         "type": "STRING",
@@ -108,6 +114,12 @@
         "mode": "NULLABLE"
     },
     {
+        "name": "architecture_style",
+        "description": "architectural style",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
         "name": "mls_status",
         "description": "listed status on mls",
         "type": "STRING",
@@ -184,6 +196,18 @@
         "name": "tax_lot",
         "description": "tax lot",
         "type":"STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "tax_map_num",
+        "description": "tax map number",
+        "type":"STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "tax_amount",
+        "description": "estimated annual tax amount",
+        "type": "INT",
         "mode": "NULLABLE"
     }
 ]

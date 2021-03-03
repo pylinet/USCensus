@@ -10,7 +10,7 @@ def extract_int(t):
     Returns:
         int: value as an int
     """
-    num_string = re.sub("\D", "", t) 
+    num_string = re.sub(r"\D", "", t) 
     return int(num_string)
     
 class bedrooms_checker:
@@ -68,6 +68,16 @@ class bathrooms_checker:
         """
         return extract_int(t)
 
+class full_bathrooms_checker:
+
+    property = 'full_bathrooms'
+    
+    def check(t):
+        return t.split(':')[0] == 'Number of Bathrooms (full)'
+    
+    def parse(t):
+        return extract_int(t)
+
 class flooring_checker:
     
     property = 'flooring_type'
@@ -79,6 +89,7 @@ class flooring_checker:
         return t.split(':')[1].strip() 
 
 
+# Exterior Features
 class garage_spaces_checker:
     
     property = 'garage_spaces'
@@ -89,6 +100,17 @@ class garage_spaces_checker:
     def parse(t):
         return extract_int(t)
 
+class parking_features_checker:
+    
+    property = 'parking_features'
+
+    def check(t):
+        return t.split(':')[0] == 'Parking'
+    
+    def parse(t):
+        return t.split(': ')[1] 
+
+# Days on Market
 
 class days_on_market_checker:
 
@@ -109,6 +131,38 @@ class year_built_checker:
 
     def parse(t):
         return extract_int(t)
+
+class property_type_checker:
+
+    property = 'property_type'
+
+    def check(t):
+        return t.split(':')[0] == 'Property Type'
+
+    def parse(t):
+        return t.split(': ')[1]
+
+class property_subtype_checker:
+
+    property = 'property_subtype'
+
+    def check(t):
+        return t.split(':')[0] == 'Property Subtype'
+
+    def parse(t):
+        return t.split(': ')[1]
+
+class architecture_style_checker:
+
+    property = 'architectural_stype'
+
+    def check(t):
+        return t.split(':')[0] == 'Architecture'
+
+    def parse(t):
+        return t.split(': ')[1]
+
+
 
 class listing_status_checker:
 
@@ -148,6 +202,25 @@ class elementary_school_district_checker:
 
     def parse(t):
         return t.split(':')[1].strip()
+class jr_mid_school_checker:
+
+    property = 'jr_mid_school'
+
+    def check(t):
+        return t.split(':')[0] == 'Jr High / Middle School'
+
+    def parse(t):
+        return t.split(':')[1].strip()
+
+class jr_mid_school_district_checker:
+
+    property = 'jr_mid_school_district'
+
+    def check(t):
+        return t.split(':')[0] == 'Jr High / Middle School District'
+    
+    def parse(t):
+        return t.split(':')[1].strip()
 
 class high_school_checker:
     
@@ -156,6 +229,15 @@ class high_school_checker:
     def check(t):
         return t.split(':')[0] == 'High School District'
 
+    def parse(t):
+        return t.split(':')[1].strip()
+class high_school_district_checker:
+
+    property = 'jr_mid_school_district'
+
+    def check(t):
+        return t.split(':')[0] == 'Jr High / Middle School District'
+    
     def parse(t):
         return t.split(':')[1].strip()
 
@@ -190,25 +272,6 @@ class lot_area_unit_checker:
     def parse(t):
         return t.split(':')[1].strip().split(' ')[1]
 
-class jr_mid_school_checker:
-
-    property = 'jr_mid_school'
-
-    def check(t):
-        return t.split(':')[0] == 'Jr High / Middle School'
-
-    def parse(t):
-        return t.split(':')[1].strip()
-
-class jr_mid_school_district_checker:
-
-    property = 'jr_mid_school_district'
-
-    def check(t):
-        return t.split(':')[0] == 'Jr High / Middle School District'
-    
-    def parse(t):
-        return t.split(':')[1].strip()
 
 class tax_amount_checker:
 
@@ -222,24 +285,92 @@ class tax_amount_checker:
         full_string = ''.join(string_num)
         return int(full_string)
 
+class tax_block_checker:
+    property = 'tax_block'
+
+    def check(t):
+        return t.split(':')[0] == 'Tax Block'
+    
+    def parse(t):
+        return t.split(':')[1].strip()
+
+class tax_lot_checker:
+    property = 'tax_lot'
+
+    def check(t):
+        return t.split(':')[0] == 'Tax Lot'
+    
+    def parse(t):
+        return t.split(':')[1].strip()
+class tax_map_num_checker:
+    property = 'tax_map_num'
+
+    def check(t):
+        return t.split(':')[0] == 'Tax Map Number'
+    
+    def parse(t):
+        return t.split(':')[1].strip()
+
+class building_area_unit_checker:
+    property = 'building_area_unit'
+
+    def check(t):
+        return t.split(':')[0] == 'Building Area Units'
+    
+    def parse(t):
+        return t.split(':')[1].strip()
+
+class mls_id_checker:
+    property = 'mls_id'
+
+    def check(t):
+        return t.split(':')[0] == 'MLS/Source ID'
+    
+    def parse(t):
+        return t.split(':')[1].strip()
+
+
 category_checkers = [
+    # interior features
     bedrooms_checker,
     bathrooms_checker,
+    full_bathrooms_checker,
     flooring_checker,
+    # Exterior Features
     garage_spaces_checker,
+    parking_features_checker,
+    # Days on Market
     days_on_market_checker,
+    # Property Information
     year_built_checker,
+    property_type_checker,
+    property_subtype_checker,
+    architecture_style_checker,
+    # active status
     listing_status_checker,
-    mls_source_id_checker,
+    mls_status_checker,
+    # location
     elementary_school_checker,
     elementary_school_district_checker,
-    high_school_checker,
-    mls_source_id_checker,
-    lot_area_checker,
-    lot_area_unit_checker,
     jr_mid_school_checker,
     jr_mid_school_district_checker,
-    tax_amount_checker
+    high_school_checker,
+    high_school_district_checker,
+    # angent information
+    mls_source_id_checker,
+    # building
+    building_area_unit_checker,
+    # community
+    # lot informatin
+    lot_area_checker,
+    lot_area_unit_checker,
+    # tax information
+    tax_amount_checker,
+    tax_block_checker,
+    tax_lot_checker,
+    tax_map_num_checker,
+    building_area_unit_checker,
+    mls_id_checker
 ]
 
 def parse_categories(category_parameters, category_checkers):
@@ -283,7 +414,7 @@ def parse_page(browser, schema, url):
     browser.find_by_xpath('//button[@data-testid="structured-amenities-table-see-all-button"]').click()
     # 3. instantiate the listing object
     listing = {
-        'url': url
+        'source_url': url
     }
     # 4. scrape page parameters
     page_params = parse_page_params(browser)
@@ -305,6 +436,14 @@ def get_listing_urls_by_state_city(browser, state, city):
     browser.visit(url)
     listings = browser.find_by_xpath('//a[@data-testid="home-marker"]')
     return list(map(lambda x: x['href'], listings))
+    
+
+def get_listings_by_listing_urls(browser, schema, listing_urls):
+    home_data = []
+    for url in listing_urls:
+        data = parse_page(browser, schema, url)
+        home_data.append(data)
+    return home_data
 
 
 def get_listings_by_state_city(browser, schema, state, city):
