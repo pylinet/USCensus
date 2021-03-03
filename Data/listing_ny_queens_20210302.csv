@@ -1,0 +1,191 @@
+,address_street,address_city_state,listed_price,days_on_market,building_area,basement_features,bedrooms,bathrooms,full_bathrooms,appliances_list,flooring_type,garage_spaces,parking_features,sewer_type,year_built,construction_materials,property_type,property_subtype,architecture_style,mls_status,listing_status,virtual_tour_url,mls_id,elementary_school,elementary_school_district,jr_mid_school,jr_mid_school_district,high_school,high_school_district,lot_area,tax_block,tax_lot,tax_map_num,tax_amount
+0,8829 183rd St,"Jamaica, NY 11423",250000,118,,,,,,,,,"Garage, Garage Detached",,1930.0,,Single Family Home,,,,,,10952109,,,,,,,,,,,
+1,14009 14th Ave,"Flushing, NY 11357",1379888,126,,,,,,,,,On Street,,1920.0,,Single Family Home,,,,,,,,,,,,,,,,,
+2,43-20 219th St,"Bayside, NY 11361",879000,64,,,,,,,,,,,1920.0,,Single Family Home,,,,,,,,,,,,,,,,,
+3,112-50 Northern Blvd #6B,"Corona, NY 11368",195000,35,,,2.0,1.0,1.0,,Hardwood,,"Garage,Off Street,Waitlist",,1953.0,,Residential,Stock Cooperative,,A,Active,,3283435,,Queens 24,,Queens 24,,Queens 24,,,,,966.0
+4,163-45 Cross Bay Blvd,"Howard Beach, NY 11414",185000,99,,,3.0,2.0,1.0,,,,None,,1984.0,,Residential,Single Family Residence,,A,Active,,3225312,,Queens 27,,Queens 27,,Queens 27,,,,,
+5,5816 220th St,"Bayside Hills, NY 11364",1058000,5,,,,,,,,,"Garage, Garage Attached",,1935.0,,Single Family Home,,,,,,,,,,,,,,,,,
+6,21719 Hempstead Ave,"Jamaica, NY 11429",579000,21,,,,,,,,,"Garage, Carport, Garage Attached, Off Street",,1960.0,,Single Family Home,,,,,,,,,,,,,,,,,
+7,209-15 18th Ave #5F,"Bayside, NY 11360",340000,19,,,3.0,2.0,1.0,,Wall To Wall Carpet,,"Assigned,Attached,Parking Lot",,1960.0,,Residential,Stock Cooperative,,A,Active,,3287244,"Ps 130, Ps 169 Bay Terrace",Queens 25,,Queens 25,,Queens 25,,,,,
+8,65-01 77th St,"Middle Village, NY 11379",680000,13,,,3.0,2.0,1.0,,,1.0,"Private,Detached,Driveway,Garage",,1940.0,,Residential,Single Family Residence,,A,Active,,3288380,,Queens 24,,Queens 24,,Queens 24,0.04,3038,88,Q03038-0088,7097.0
+9,60-18 77th St,"Middle Village, NY 11379",989000,4,,,3.0,3.0,2.0,,Hardwood,,"Private,Driveway,On Street",,1950.0,,Residential,Single Family Residence,,A,Active,,3290465,,Queens 24,,Queens 24,,Queens 24,0.04,,,,8216.0
+10,10218 Russell St,"Jamaica, NY 11414",329000,99,,,2.0,2.0,1.0,,,,"Private,No Garage",,1925.0,,Residential,Single Family Residence,,A,Active,,3204463,,Queens 27,,Queens 27,,Queens 27,0.03,14238,1046,Q14238-1046,2100.0
+11,104-54 164th St,"Jamaica, NY 11433",310000,85,,,,,,,,,,,,,Single Family Home,,,,,,10730457,,,,,,,,,,,
+12,131-16 115th Ave,"South Ozone Park, NY 11420",235000,8,,,,,,,,,,,1925.0,,Single Family Home,,,,,,10973205,,,,,,,,,,,
+13,13437 155th St,"Jamaica, NY 11434",389000,51,,,,,,,,,,,1950.0,,Single Family Home,,,,,,10963889,,,,,,,,,,,
+14,3304 161st St,"Flushing, NY 11358",1559000,28,,,,,,,,,,,1930.0,,Single Family Home,,,,,,,,,,,,,,,,,
+15,23-35 Bell Blvd #1A,"Bayside, NY 11360",279900,99,,,,,,,,,Off Street,,1961.0,,Coop,,,,,,,,,,,,,,,,,
+16,6607 52nd Ave,"Flushing, NY 11378",908888,6,,,6.0,2.0,2.0,,,,Private,,1920.0,,Residential Income,Multi Family,,A,Active,,3290041,Ps 229 Emanuel Kaplan,Queens 24,Is 73 Frank Sansivieri Inter School,Queens 24,,Queens 24,0.07,,,,7239.0
+17,106-43 156th St,"Jamaica, NY 11433",460000,34,,,8.0,4.0,4.0,,,,"Private,Driveway",,1931.0,,Residential Income,Multi Family,,A,Active,,3283849,,Queens 28,,Queens 28,,Queens 28,0.06,10124,39,,3913.0
+18,61-32 233rd St,"Oakland Gardens, NY 11364",950000,13,,,6.0,6.0,4.0,,Hardwood,1.0,"Private,Attached,Driveway",,1980.0,,Residential Income,Multi Family,,A,Active,,3288436,Ps 213 Carl Ullman School (The),Queens 26,Jhs 74 Nathaniel Hawthorne,Queens 26,,Queens 26,1.85,7654,1021,Q07654-1021,7941.0
+19,91-15 164th Ave,"Howard Beach, NY 11414",300000,113,,,,,,,,,,,1970.0,,Single Family Home,,,,,,10952939,,,,,,,,,,,
+20,15905 134th Ave,"Jamaica, NY 11434",649999,110,,,,,,,,,"Carport, Off Street",,1945.0,,Single Family Home,,,,,,,,,,,,,,,,,
+21,1084 Gipson St,"Far Rockaway, NY 11691",549888,29,,,4.0,3.0,2.0,,,1.0,"Private,Detached",,1925.0,,Residential,Single Family Residence,,A,Active,,3284983,,Queens 27,,Queens 27,,Queens 27,0.19,15714,54,Q15714-0054,4200.0
+22,166-42 17th Rd #3118,"Whitestone, NY 11357",335000,53,,,2.0,1.0,1.0,,Hardwood,,"Assigned,Garage,Parking Lot,Off Street,Private,Public Parking,On Street",,1950.0,,Residential,Stock Cooperative,,A,Active,,3279220,,Queens 25,,Queens 25,,Queens 25,,,,,
+23,78-54 81st St,"Ridgewood, NY 11385",749000,6,,,3.0,2.0,2.0,,,1.0,"None,Detached",,1920.0,,Residential,Single Family Residence,,A,Active,,3289997,,Queens 24,,Queens 24,,Queens 24,0.04,3831,71,Q03831-0071,4410.0
+24,170-10 118th Ave,"Jamaica, NY 11434",300000,13,,,4.0,3.0,2.0,,,1.0,"Private,Detached,Driveway",,1930.0,,Residential Income,Multi Family,,A,Active,,3288551,,Queens 28,,Queens 28,,Queens 28,0.06,12371,304,Q12371-0304,4770.0
+25,350 150th St,"Flushing, NY 11357",1200000,17,,,4.0,5.0,4.0,,,,"Private,Covered,Driveway,No Garage",,1987.0,,Residential,Single Family Residence,,A,Active,,3287549,,Queens 25,,Queens 25,,Queens 25,0.09,4495,53,,15710.0
+26,13543 120th St,"Jamaica, NY 11420",949000,4,,,,,,,,,"Garage, Garage Attached",,1940.0,,Multi Family,,,,,,,,,,,,,,,,,
+27,3235 200th St,"Flushing, NY 11361",748000,4,,,,,,,,,"Garage, Garage Attached",,1930.0,,Single Family Home,,,,,,,,,,,,,,,,,
+28,59-31 71st St,"Maspeth, NY 11378",1075000,3,,,,,,,,,,,1920.0,,Multi Family,,,,,,10401321431,,,,,,,,,,,
+29,147-35 Village Rd #35B,"Jamaica, NY 11435",309999,99,,,3.0,2.0,2.0,,,,,,1947.0,,Residential,Stock Cooperative,,A,Active,,3243117,,Queens 28,,Queens 28,,Queens 28,,,,,
+30,120-01 18th Ave #2,"College Pt, NY 11356",699000,13,,,,,,,,,,,1910.0,,Multi Family,,,,,,,,,,,,,,,,,
+31,111-74 145th St,"Jamaica, NY 11435",529000,161,,,,,,,,,"Carport, Off Street",,1925.0,,Single Family Home,,,,,,,,,,,,,,,,,
+32,11534 Van Wyck Expy,"Jamaica, NY 11420",770000,82,,,3.0,3.0,2.0,,Hardwood,1.0,"Private,Detached",,1930.0,,Residential,Single Family Residence,,A,Active,,3246226,,Queens 27,,Queens 27,,Queens 27,0.08,11678,27,Q11678-0027,5059.0
+33,10019 201st St,"Jamaica, NY 11423",279000,90,,,,,,,,,"Garage, Garage Attached",,1925.0,,Single Family Home,,,,,,10957171,,,,,,,,,,,
+34,13181 Francis Lewis Blvd,"Laurelton, NY 11413",299000,77,,,,,,,,,"Garage, Garage Attached",,1940.0,,Single Family Home,,,,,,10960343,,,,,,,,,,,
+35,23-25 Bell Blvd #6-G,"Bayside, NY 11360",349000,180,,,,,,,,,,,1961.0,,Coop,,,,,,,,,,,,,,,,,
+36,227-15 112th Rd,"Queens Village, NY 11429",459900,25,,,4.0,2.0,2.0,,,1.0,"Private,Detached",,1950.0,,Residential,Single Family Residence,,A,Active,,3285756,,Queens 29,,Queens 29,,Queens 29,0.09,11227,66,Q11227-0066,5061.0
+37,13312 125th St,"Ozone Park, NY 11420",599000,8,,,3.0,2.0,1.0,,Hardwood,,"None,Off Site",,1920.0,,Residential,Single Family Residence,,A,Active,,3289404,,Queens 27,,Queens 27,,Queens 27,0.05,11783,42,,3773.0
+38,10845 Liverpool St,"Jamaica, NY 11435",724999,1,,,4.0,3.0,2.0,,Hardwood,,Private,,1925.0,,Residential,Single Family Residence,,A,Active,,3291613,,Queens 28,,Queens 28,,Queens 28,0.07,11947,207,,5478.0
+39,223-06 Manor Rd,"Queens Village, NY 11427",329000,5,,,2.0,1.0,1.0,,Hardwood,,Parking Lot,,1955.0,,Residential,Stock Cooperative,,A,Active,,3290206,,Queens 26,,Queens 26,,Queens 26,,,,,
+40,09-05 162nd St #5B,"Whitestone, NY 11357",435000,3,,,3.0,1.0,1.0,,,,,,1958.0,,Residential,Stock Cooperative,,A,Active,,3290749,,Queens 25,,Queens 25,,Queens 25,,,,,
+41,149-18 10th Ave,"Whitestone, NY 11357",749000,99,,,3.0,2.0,1.0,,Hardwood,,"None,No Garage,On Street",,1930.0,,Residential,Single Family Residence,,A,Active,,3243400,,Queens 25,,Queens 25,,Queens 25,0.1,4502,16,Q04502-0016,5460.0
+42,46-29 Douglaston Pkwy,"Little Neck, NY 11362",1688000,1,,,4.0,5.0,3.0,,,1.0,"Private,Detached",,1930.0,,Residential,Single Family Residence,,A,Active,,3291283,,Queens 26,,Queens 26,,Queens 26,0.14,,,,11397.0
+43,82-16 164th Pl,"Jamaica, NY 11432",695888,1,,,4.0,2.0,2.0,,,2.0,"Private,Detached",,1930.0,,Residential,Single Family Residence,,A,Active,,3291063,,Queens 29,,Queens 29,,Queens 29,0.08,7038,50,Q07038-0050,6333.0
+44,115-12 172nd St,"Jamaica, NY 11434",625000,1,,,3.0,2.0,1.0,,Hardwood,1.0,"Private,Detached,Carport,Driveway,Off Street",,1935.0,,Residential,Single Family Residence,,A,Active,,3291064,,Queens 29,,Queens 29,,Queens 29,0.07,12402,36,Q12402-0036,5324.0
+45,123-22 146th St,"Jamaica, NY 11436",270000,20,,,,,,,,,Garage Attached,,1920.0,,Single Family Home,,,,,,10695866,,,,,,,,,,,
+46,219-19 Peck Ave,"Queens Village, NY 11427",2400000,1,,,,,,,,,,,1955.0,,Single Family Home,,,,,,,,,,,,,,,,,
+47,100-36 Bellaire,"Queens Village, NY 11429",620000,9,,,4.0,3.0,2.0,,Hardwood,,"Private,Driveway",,1920.0,,Residential,Single Family Residence,,A,Active,,3289157,,Queens 29,,Queens 29,,Queens 29,0.08,10876,36,Q10876-0036,4017.0
+48,72-26 66th Rd,"Middle Village, NY 11379",1699000,8,,,,,,,,,,,1955.0,,Single Family Home,,,,,,,,,,,,,,,,,
+49,17358 105th Ave,"Jamaica, NY 11433",559000,136,,,,,,,,,"Garage, Carport, Garage Detached, Off Street",,1925.0,,Single Family Home,,,,,,,,,,,,,,,,,
+50,11860 227th St,"Jamaica, NY 11411",250000,160,,,,,,,,,"Garage, Garage Attached",,1950.0,,Mobile Manufactured,,,,,,10940522,,,,,,,,,,,
+51,14720 257th St,"Jamaica, NY 11422",698500,35,,,,,,,,,,,1960.0,,Single Family Home,,,,,,,,,,,,,,,,,
+52,8808 104th St,"Jamaica, NY 11418",589000,12,,,3.0,3.0,1.0,,,,None,,1920.0,,Residential,Single Family Residence,,A,Active,,3288563,,Queens 27,,Queens 27,,Queens 27,0.04,9288,120,Q09288-0120,4760.0
+53,79-26 212th St,"Oakland Gardens, NY 11364",959000,4,,,3.0,2.0,2.0,,,1.0,"Private,Detached",,1945.0,,Residential,Single Family Residence,,A,Active,,3290511,Ps 188 Kingsbury,Queens 26,Irwin Altman Middle School 172,Queens 26,,Queens 26,0.09,,,,9410.0
+54,113-42 Springfield Blvd #A,"Queens Village, NY 11429",769000,106,,,,,,,,,"Carport, Garage Attached, Off Street",,1965.0,,Multi Family,,,,,,,,,,,,,,,,,
+55,42-39 194th St,"Flushing, NY 11358",849000,22,,,,,,,,,,,1945.0,,Single Family Home,,,,,,,,,,,,,,,,,
+56,22-13 37th St #3FAM,"Astoria, NY 11105",1749000,5,,,,,,,,,,,1925.0,,Multi Family,,,,,,,,,,,,,,,,,
+57,12347 Inwood St,"Jamaica, NY 11436",574999,23,,,4.0,3.0,2.0,,Hardwood,2.0,"Private,Detached,On Street",,1935.0,,Residential,Single Family Residence,,A,Active,,3286100,"Ps 100 Glen Morris, Ps 223 Lyndon B Johnson",Queens 27,Jhs 202 Robert H Goddard,Queens 27,,Queens 27,0.04,12049,127,Q12049-0127,3280.0
+58,97-20 102nd St,"Ozone Park, NY 11416",639000,5,,,6.0,2.0,2.0,,,,Shared Driveway,,1920.0,,Residential Income,Multi Family,,A,Active,,3290321,,Queens 27,,Queens 27,,Queens 27,0.06,,,,6810.0
+59,3255 110th St,"Flushing, NY 11369",789000,180,,,,,,,,,"Carport, Off Street",,1930.0,,Multi Family,,,,,,,,,,,,,,,,,
+60,59-37 69th Pl,"Maspeth, NY 11378",797000,14,,,3.0,2.0,2.0,,Hardwood,1.0,"Private,Attached,Driveway",,1950.0,,Residential,Single Family Residence,,A,Active,,3224453,Ps 153 Maspeth Elementary,Queens 24,,Queens 24,,Queens 24,0.05,2831,54,Q02831-0054,5637.0
+61,90-01 153rd Ave #2,"Howard Beach, NY 11414",279999,4,,,3.0,1.0,1.0,,Hardwood,,Waitlist,,1960.0,,Residential,Stock Cooperative,,A,Active,,3290554,Ps 232 Lindenwood,Queens 27,Jhs 202 Robert H Goddard,Queens 27,,Queens 27,,,,,
+62,463 Onderdonk Ave,"Flushing, NY 11385",1099500,4,,,,,,,,,,,1930.0,,Multi Family,,,,,,,,,,,,,,,,,
+63,19018 114th Dr,"Saint Albans, NY 11412",330000,180,,,,,,,,,"Garage, Garage Detached",,1930.0,,Single Family Home,,,,,,10729549,,,,,,,,,,,
+64,249-04 81st Ave,"Bellerose, NY 11426",899000,1,,,4.0,3.0,3.0,,,1.0,"Private,Detached",,1955.0,,Residential,Single Family Residence,,A,Active,,3290964,,Floral Park-Bellerose,,Floral Park-Bellerose,,Floral Park-Bellerose,0.1,8572,138,Q08572-0138,7894.0
+65,14726 Arlington Ter S,"Jamaica, NY 11435",989000,1,,,8.0,5.0,5.0,,Hardwood,,"Private,Driveway",,2020.0,,Residential Income,Multi Family,,A,Active,,3291179,,Queens 28,,Queens 28,,Queens 28,0.06,,,,4510.0
+66,32-17 38th Ave,"Long Island City, NY 11101",1300000,1,,,4.0,3.0,3.0,,,,None,,1915.0,,Residential Income,Multi Family,,A,Active,,3290955,,Queens 24,,Queens 24,,Queens 24,0.05,374,46,Q00374-0046,7593.0
+67,137-23 249th St,"Rosedale, NY 11422",249999,95,,,3.0,2.0,2.0,,,,"Shared Driveway,Private",,1925.0,,Residential Income,Multi Family,,A,Active,,3271891,,Queens 29,,Queens 29,,Queens 29,0.06,13624,20,Q13624-0020,2081.0
+68,6451 Borden Ave,"Maspeth, NY 11378",1268000,1,,,5.0,5.0,4.0,,,,Private,,2013.0,,Residential Income,Multi Family,,A,Active,,3291191,Ps 229 Emanuel Kaplan,Queens 24,,Queens 24,,Queens 24,0.06,2379,48,,8656.0
+69,112-30 Northern Blvd #2E,"Corona, NY 11368",100000,180,,,,,,,,,,,1950.0,,Coop,,,,,,,,,,,,,,,,,
+70,11341 210th St,"Jamaica, NY 11429",565000,2,,,,,,,,,,,1935.0,,Single Family Home,,,,,,,,,,,,,,,,,
+71,21-27 33rd St #5G,"Astoria, NY 11105",299000,180,,,,,,,,,,,1923.0,,Coop,,,,,,,,,,,,,,,,,
+72,14 Ascan Ave,"Forest Hills, NY 11375",2188000,123,,,,,,,,,"Garage, Garage Attached, On Street",,1935.0,,Single Family Home,,,,,,,,,,,,,,,,,
+73,179-01 135th Ave,"Jamaica, NY 11434",979000,21,,,,,,,,,Garage Detached,,2020.0,,Multi Family,,,,,,,,,,,,,,,,,
+74,110-10 103rd Ave,"South Richmond Hill, NY 11419",649000,2,,,,,,,,,"Carport, Off Street",,1920.0,,Single Family Home,,,,,,,,,,,,,,,,,
+75,60-79 71st St,"Maspeth, NY 11378",728000,1,,,3.0,2.0,2.0,,,1.0,"Shared Driveway,Attached,Common",,1945.0,,Residential,Single Family Residence,,A,Active,,3192345,,Queens 24,,Queens 24,,Queens 24,0.04,2842,47,Q02842-0047,6604.0
+76,2332 36th St,"Long Island City, NY 11105",998500,2,,,,,,,,,"Garage, Garage Attached",,1930.0,,Multi Family,,,,,,,,,,,,,,,,,
+77,102-36 85th Ave,"Richmond Hill, NY 11418",729000,1,,,3.0,3.0,3.0,,Hardwood,,None,,1925.0,,Residential Income,Multi Family,,A,Active,,3291206,Ps 66 Jacqueline Kennedy-Onassis,Queens 27,,Queens 27,,Queens 27,0.05,9183,18,Q09183-0018,5412.0
+78,77-29 249th St,"Bellerose, NY 11426",698888,1,,,3.0,2.0,2.0,,,,Private,,1950.0,,Residential,Single Family Residence,,A,Active,,3291062,,Queens 26,,Queens 26,,Queens 26,0.06,8502,33,Q08502-0033,6333.0
+79,140-16 135th Ave,"Jamaica, NY 11436",30000,99,,,,,,,,,,,,,Land,Unimproved Land,,A,Active,,3229189,,Queens 27,,Queens 27,,Queens 27,0.91,,,,7200.0
+80,104-20 68th Dr #AA3,"Forest Hills, NY 11375",375000,10,,,2.0,1.0,1.0,,,,Garage,,1956.0,,Residential,Stock Cooperative,,A,Active,,3289089,Ps 196 Grand Central Parkway,Queens 28,Jhs 157 Stephen A Halsey,Queens 28,,Queens 28,,,,,
+81,7311 69th Ave,"Flushing, NY 11379",699900,3,,,2.0,2.0,2.0,,Hardwood,1.0,"Private,Attached,Driveway,Garage",,1940.0,,Residential,Single Family Residence,,A,Active,,3290698,,Queens 24,,Queens 24,,Queens 24,0.05,3785,44,,6164.0
+82,107-40 Watson,"Jamaica, NY 11433",510000,1,,,2.0,2.0,2.0,,Hardwood,,"Private,Common",,1950.0,,Residential,Single Family Residence,,A,Active,,3291257,,Queens 28,,Queens 28,,Queens 28,0.04,10251,26,Q10251-0026,3163.0
+83,155-01 90th Ave #3N,"Jamaica, NY 11432",175000,3,,,1.0,1.0,1.0,,Hardwood,,,,1941.0,,Residential,Stock Cooperative,,A,Active,,3290845,Ps 182 Samantha Smith,Queens 28,Jhs 217 Robert A Van Wyck,Queens 28,,Queens 28,,9755,50,,
+84,8916 201st St,"Hollis, NY 11423",749000,1,,,4.0,3.0,3.0,,,2.0,"Private,Detached",,1925.0,,Residential Income,Multi Family,,A,Active,,3291292,Ps 134 Hollis,Queens 29,,Queens 29,,Queens 29,0.06,,,,5890.0
+85,22414 Edmore Ave,"Queens Village, NY 11428",774999,1,,,,,,,,,Garage Detached,,1925.0,,Single Family Home,,,,,,,,,,,,,,,,,
+86,23-32 36th St,"Astoria, NY 11105",998500,1,,,3.0,2.0,2.0,,,,"None,On Street",,1930.0,,Residential Income,Multi Family,,A,Active,,3291091,Ps 84 Steinway,Queens 30,Is 141 Steinway (The),Queens 30,,Queens 30,0.05,820,151,Q00820-0151,6940.0
+87,78-17 86th St,"Ridgewood, NY 11385",849000,5,,,3.0,2.0,1.0,,Hardwood,1.0,"Shared Driveway,Detached,On Street",,1920.0,,Residential,Single Family Residence,,A,Active,,3290390,Ps/Is 113 Anthony J Pranzo,Queens 24,,Queens 24,,Queens 24,0.06,3845,29,Q03845-0029,6661.0
+88,91-30 184th St,"Hollis, NY 11423",1400000,1,,,6.0,5.0,5.0,,,,"Private,Driveway",,2021.0,,Residential Income,Multi Family,,A,Active,,3291154,,Queens 29,,Queens 29,,Queens 29,0.07,9903,66,,3800.0
+89,16433 83rd St,"Jamaica, NY 11414",2399000,50,,,6.0,5.0,3.0,,Hardwood,1.0,"Private,Attached,Driveway",,2010.0,,Residential,Single Family Residence,,A,Active,,3279259,Ps 207 Rockwood Park,Queens 27,Jhs 202 Robert H Goddard,Queens 27,,Queens 27,0.18,14077,63,Q14077-0063,14402.0
+90,11560 198th St,"Jamaica, NY 11412",679999,180,,,,,,,,,Garage Detached,,1940.0,,Single Family Home,,,,,,10647526,,,,,,,,,,,
+91,3 Point Cres,"Malba, NY 11357",5488000,99,,,7.0,10.0,9.0,,Hardwood,4.0,"Private,Attached",,1995.0,,Residential,Single Family Residence,,A,Active,,3082485,,Queens 25,,Queens 25,,Queens 25,0.4,4416,7,Q04416-0007,23000.0
+92,60-77 59th Dr,"Maspeth, NY 11378",669000,1,,,2.0,2.0,1.0,,,,Shared Driveway,,1925.0,,Residential,Single Family Residence,,A,Active,,3229195,Ps 153 Maspeth Elementary,Queens 24,,Queens 24,,Queens 24,0.06,2741,42,Q02741-0042,4001.0
+93,10710 142nd St,"Jamaica, NY 11435",370000,180,,,,,,,,,,,1920.0,,Single Family Home,,,,,,10916057,,,,,,,,,,,
+94,60-11 Broadway #4R,"Woodside, NY 11377",329000,180,,,,,,,,,,,1962.0,,Coop,,,,,,S1469873,,,,,,,,,,,
+95,28-54 216th St,"Bayside, NY 11360",1150000,3,,,3.0,3.0,2.0,,Hardwood,2.0,"Private,Attached,Driveway,Garage,Off Street",,1960.0,,Residential,Single Family Residence,,A,Active,,3290736,,Queens 26,,Queens 26,,Queens 26,0.15,6018,64,Q06018-0064,11166.0
+96,14787 Brookville Blvd,"Jamaica, NY 11422",350000,47,,,4.0,2.0,2.0,,,,Private,,1950.0,,Residential Income,Multi Family,,A,Active,,3280774,,Queens 29,,Queens 29,,Queens 29,0.06,13742,2,Q13742-0002,7200.0
+97,222-02 38th Ave,"Bayside, NY 11361",1980000,42,,,4.0,5.0,4.0,,Hardwood,1.0,"Private,Attached,Garage",,2013.0,,Residential,Single Family Residence,,A,Active,,3281907,,Queens 26,,Queens 26,,Queens 26,0.11,6195,1,,10800.0
+98,144-55 Melbourne Ave #3F,"Flushing, NY 11367",225000,86,,,,,,,,,,,1954.0,,Coop,,,,,,,,,,,,,,,,,
+99,15-13 149th St,"Whitestone, NY 11357",798000,3,,,3.0,1.0,1.0,,,,"None,On Street",,1925.0,,Residential,Single Family Residence,,A,Active,,3290775,Ps 79 Francis Lewis,Queens 25,Jhs 194 William Carr,Queens 25,,Queens 25,0.06,4662,6,Q04662-0006,6340.0
+100,84-67 Parsons Blvd,"Jamaica, NY 11432",989000,2,,,,,,,,,,,1930.0,,Multi Family,,,,,,,,,,,,,,,,,
+101,69-51 178th St,"Fresh Meadows, NY 11365",968000,6,,,4.0,2.0,2.0,,,,"Private,No Garage",,1945.0,,Residential,Single Family Residence,,A,Active,,3289847,,Queens 26,,Queens 26,,Queens 26,0.09,7131,53,Q07131-0053,9900.0
+102,218-23 68th Ave #1,"Oakland Gardens, NY 11364",319999,2,,,,,,,,,,,,,Coop,,,,,,,,,,,,,,,,,
+103,219 Burns St,"Forest Hills Gardens, NY 11375",1598000,112,,,,,,,,,"Garage, Garage Attached",,1935.0,,Townhouse,,,,,,,,,,,,,,,,,
+104,188-72 85th Rd,"Hollis, NY 11423",988000,99,,,4.0,3.0,3.0,,Hardwood,2.0,"Private,Attached,Driveway",,1965.0,,Residential,Single Family Residence,,A,Active,,3265618,,Queens 26,,Queens 26,,Queens 26,0.12,10506,38,Q10506-0038,10201.0
+105,219-15 102nd Ave,"Queens Village, NY 11429",995000,50,,,5.0,5.0,4.0,,Hardwood,1.0,"Private,Attached",,2015.0,,Residential,Single Family Residence,,A,Active,,3280000,,Queens 29,,Queens 29,,Queens 29,0.13,10773,41,Q10773-0041,10889.0
+106,174-48 125th Ave #12521-0104,"Jamaica, NY 11434",650000,2,,,,,,,,,,,,,Single Family Home,,,,,,10974253,,,,,,,,,,,
+107,602 158th St,"Flushing, NY 11357",5999999,180,,,,,,,,,,,2009.0,,Single Family Home,,,,,,3040190,,,,,,,,,,,
+108,112-24 Northern Blvd #2D,"Corona, NY 11368",229000,40,,,3.0,1.0,1.0,,Hardwood,,"Garage,Parking Lot,Public Parking,Waitlist",,1953.0,,Residential,Stock Cooperative,,A,Active,,3282288,,Queens 24,,Queens 24,,Queens 24,,,,,
+109,18-41 215th St #Townhouse 15,"Bayside, NY 11360",455000,99,,,3.0,3.0,2.0,,Hardwood,,"Garage,Parking Lot,Off Street",,1970.0,,Residential,Stock Cooperative,,A,Active,,3264535,,Queens 25,,Queens 25,,Queens 25,,5938,0007,,
+110,9-09 43rd Ave,"Long Island City, NY 11101",1749000,4,,,,,,,,,,,1901.0,,Multi Family,,,,,,,,,,,,,,,,,
+111,94-51 217th St,"Queens Village, NY 11428",799999,25,,,4.0,3.0,2.0,,,1.0,"Shared Driveway,Detached",,1960.0,,Residential,Single Family Residence,,A,Active,,3285772,,Queens 29,,Queens 29,,Queens 29,0.08,10610,53,Q10610-0053,5530.0
+112,81-03 91st Ave,"Woodhaven, NY 11421",608000,180,,,,,,,,,,,1920.0,,Single Family Home,,,,,,,,,,,,,,,,,
+113,219-52 67th Ave #D,"Oakland Gardens, NY 11364",379000,2,,,,,,,,,Off Street,,,,Coop,,,,,,,,,,,,,,,,,
+114,67-76 Booth St #8-O,"Forest Hills, NY 11375",425000,2,,,,,,,,,,,1948.0,,Coop,,,,,,,,,,,,,,,,,
+115,190-15 105th Ave,"Saint Albans, NY 11412",509900,180,,,,,,,,,Garage Detached,,1930.0,,Single Family Home,,,,,,T9VTTD,,,,,,,,,,,
+116,144-20 Village Rd #65B,"Jamaica, NY 11435",380000,19,,,,,,,,,,,,,Coop,,,,,,,,,,,,,,,,,
+117,110-50 71st Rd #3N,"Forest Hills, NY 11375",275000,5,,,,,,,,,"Garage Attached, On Street",,1957.0,,Coop,,,,,,,,,,,,,,,,,
+118,83-00 Talbot St #BB1,"Kew Gardens, NY 11415",399000,5,,,,,,,,,,,1930.0,,Coop,,,,,,,,,,,,,,,,,
+119,33-47 91st St #5F,"Jackson Heights, NY 11372",435000,91,,,,,,,,,,,1958.0,,Coop,,,,,,,,,,,,,,,,,
+120,16653 22nd Ave,"Whitestone, NY 11357",749000,13,,,3.0,2.0,2.0,,,,"Shared Driveway,No Garage",,1955.0,,Residential,Single Family Residence,,A,Active,,3288492,Ps 184 Flushing Manor,Queens 25,Jhs 194 William Carr,Queens 25,,Queens 25,0.04,,,,6950.0
+121,21007 34th Rd,"Flushing, NY 11361",1150000,36,,,4.0,2.0,1.0,,Hardwood,1.0,"Private,Detached,Driveway",,1935.0,,Residential,Single Family Residence,,A,Active,,3283243,,Queens 26,,Queens 26,,Queens 26,0.09,6107,32,Q06107-0032,9732.0
+122,62-47 82nd St,"Middle Village, NY 11379",759000,4,,,3.0,2.0,1.0,,,,Private,,1940.0,,Residential,Single Family Residence,,A,Active,,3290570,,Queens 24,,Queens 24,,Queens 24,0.03,,,,6826.0
+123,69-40 Yellowstone Blvd #2004,"Forest Hills, NY 11375",208000,3,,,,,,,,,,,1942.0,,Coop,,,,,,,,,,,,,,,,,
+124,114-58 196th St,"Jamaica, NY 11412",549000,1,,,3.0,2.0,2.0,,,1.0,"Private,Attached",,1945.0,,Residential,Single Family Residence,,A,Active,,3291208,,Queens 29,,Queens 29,,Queens 29,0.04,11012,35,Q11012-0035,4029.0
+125,232 Manor Rd,"Douglaston, NY 11363",1489000,8,,,5.0,5.0,4.0,,Hardwood,1.0,"Private,Attached,Driveway,Garage,On Street",,1915.0,,Residential,Single Family Residence,,A,Active,,3289413,Ps 98 Douglaston School (The),Queens 26,Jhs 67 Louis Pasteur,Queens 26,,Queens 26,0.21,8046,16,,17600.0
+126,69-31 67th St,"Ridgewood, NY 11385",798000,40,,,,,,,,,"Garage Detached, Off Street",,1940.0,,Single Family Home,,,,,,,,,,,,,,,,,
+127,83-40 Austin St #2V,"Kew Gardens, NY 11415",399000,1,,,2.0,2.0,1.0,,Hardwood,,Waitlist,,1955.0,,Residential,Stock Cooperative,,A,Active,,3291134,Ps 99 Kew Gardens,Queens 28,,Queens 28,,Queens 28,,,,,
+128,85-10 34th Ave #122,"Jackson Heights, NY 11372",460000,1,,,,,,,,,,,1927.0,,Coop,,,,,,,,,,,,,,,,,
+129,116-30 128th St,"South Ozone Park, NY 11420",450000,6,,,3.0,2.0,1.0,,,1.0,"Private,Attached,Detached",,1925.0,,Residential,Single Family Residence,,A,Active,,3290023,,Queens 27,,Queens 27,,Queens 27,0.05,11684,19,Q11684-0019,5511.0
+130,4338 189th St,"Flushing, NY 11358",1298000,4,,,,,,,,,"Garage, Garage Attached",,1935.0,,Multi Family,,,,,,,,,,,,,,,,,
+131,96-11 65th Rd #506,"Rego Park, NY 11374",428000,1,,,2.0,1.0,1.0,,,,On Street,,1939.0,,Residential,Stock Cooperative,,A,Active,,3290990,Ps 139 Rego Park,Queens 28,Jhs 190 Russell Sage,Queens 28,,Queens 28,,,,,
+132,64-81 83rd St,"Middle Village, NY 11379",778000,5,,,3.0,2.0,2.0,,,1.0,"Shared Driveway,Detached",,1935.0,,Residential,Single Family Residence,,A,Active,,3290351,Ps 49 Dorothy Bonawit Kole,Queens 24,,Queens 24,,Queens 24,0.05,3020,7,Q03020-0007,6913.0
+133,128-18 149th St,"Jamaica, NY 11436",550000,1,,,3.0,3.0,2.0,,"Hardwood, Other",,"Shared Drive,1 Space",,1920.0,,Residential,Single Family Residence,,Active,Active,,448616,,,,,,,2000.0,12107,40,,2970.0
+134,102-21 63rd Rd #A43,"Forest Hills, NY 11375",360000,2,,,,,,,,,,,1955.0,,Coop,,,,,,,,,,,,,,,,,
+135,2627 Clearview Expy,"Flushing, NY 11360",1098888,36,,,3.0,3.0,3.0,,Hardwood,1.0,"Private,Attached,Driveway",,1955.0,,Residential,Single Family Residence,,A,Active,,3283191,,Queens 26,,Queens 26,,Queens 26,0.09,,,,9612.0
+136,87-05 166th St #3E,"Jamaica, NY 11432",125000,1,,,,1.0,1.0,,Hardwood,1.0,Garage,,1963.0,,Residential,Stock Cooperative,,A,Active,,3291126,Ps 131 Abigail Adams,Queens 29,,Queens 29,,Queens 29,,,,,
+137,140-18 68th Dr,"Flushing, NY 11367",949000,1,,,3.0,3.0,2.0,,Hardwood,1.0,"Private,Attached,Driveway,Public Parking,On Street",,1950.0,,Residential,Townhouse,,A,Active,,3286822,Ps 20 John Bowne,Queens 25,,Queens 25,,Queens 25,0.04,,,,8205.0
+138,34-39 82nd St #51,"Jackson Heights, NY 11372",598000,2,,,,,,,,,,,1936.0,,Coop,,,,,,,,,,,,,,,,,
+139,36-45 211th St,"Bayside, NY 11361",1115800,99,,,5.0,3.0,2.0,,Hardwood,1.0,"Private,Detached,Driveway",,1920.0,,Residential,Single Family Residence,,A,Active,,3253471,,Queens 26,,Queens 26,,Queens 26,0.09,6170,36,Q06170-0036,8279.0
+140,234-34 133rd Ave #1,"Rosedale, NY 11422",159000,41,,,1.0,1.0,1.0,,,,,,1950.0,,Residential,Stock Cooperative,,A,Active,,3282112,,Queens 29,,Queens 29,,Queens 29,,,,,
+141,18720 Peck Ave,"Fresh Meadows, NY 11365",1049000,20,,,3.0,3.0,3.0,,,2.0,"Detached,Driveway,Garage",,1945.0,,Residential,Single Family Residence,,A,Active,,H6096075,Call Listing Agent,Call Listing Agent,Call Listing Agent,Call Listing Agent,,Call Listing Agent,0.31,,,,9635.0
+142,78-34 64th St,"Ridgewood, NY 11385",750000,10,,,3.0,3.0,2.0,,,,Private,,1940.0,,Residential,Single Family Residence,,A,Active,,3289029,,Queens 24,,Queens 24,,Queens 24,0.06,3716,35,Q03716-0035,5663.0
+143,160-15 Powells Cove Blvd #B303,"Whitestone, NY 11357",283988,7,,,,,,,,,,,1928.0,,Coop,,,,,,,,,,,,,,,,,
+144,13921 85th Dr #1C,"Jamaica, NY 11435",349000,3,,,2.0,1.0,1.0,,Hardwood,,"On Street,Waitlist",,1945.0,,Residential,Stock Cooperative,,A,Active,,3290697,Ps 117 J Keld/Briarwood School,Queens 28,Jhs 217 Robert A Van Wyck,Queens 28,,Queens 28,,,,,
+145,167-05 12th Ave #4B,"Whitestone, NY 11357",399888,180,,,,,,,,,,,1958.0,,Coop,,,,,,,,,,,,,,,,,
+146,41-18 27th St #1A,"Long Island City, NY 11101",850000,180,,,,,,,,,,,2008.0,,Condo,,,,,,,,,,,,,,,,,
+147,99-41 64 #B17,"Rego Park, NY 11374",689000,1,,,3.0,2.0,2.0,,,,,,1956.0,,Residential,Stock Cooperative,,A,Active,,3291144,,Queens 24,,Queens 24,,Queens 24,,,,,
+148,99-41 64th Ave #B17,"Rego Park, NY 11374",689000,2,,,,,,,,,,,1947.0,,Coop,,,,,,,,,,,,,,,,,
+149,3233 200th St,"Bayside, NY 11361",698000,39,,,3.0,2.0,1.0,,,1.0,"Private,Garage",,1930.0,,Residential,Single Family Residence,,A,Active,,3282805,Ps 159,Queens 26,,Queens 26,,Queens 26,0.04,,,,4455.0
+150,6445 Ellwell Cres,"Flushing, NY 11374",2088888,1,,,3.0,3.0,3.0,,Hardwood,1.0,"Private,Attached,Driveway,On Street",,1949.0,,Residential,Single Family Residence,,A,Active,,3291099,,Queens 24,,Queens 24,,Queens 24,0.09,,,,12013.0
+151,8715 165th St,"Jamaica, NY 11432",130000,99,,,,1.0,1.0,,,,None,,1960.0,,Residential,Single Family Residence,,A,Active,,3270648,,Queens 24,,Queens 24,,Queens 24,0.23,,,,500.0
+152,42-95 Main St #4,"Flushing, NY 11355",428000,1,,,2.0,2.0,1.0,,,,,,1960.0,,Residential,Stock Cooperative,,A,Active,,3290992,,Queens 25,,Queens 25,,Queens 25,,,,,
+153,61-15 75th St,"Middle Village, NY 11379",1299000,2,,,,,,,,,Garage Attached,,1960.0,,Multi Family,,,,,,,,,,,,,,,,,
+154,13-01 34th Ave #2,"Astoria, NY 11106",1149000,134,,,,,,,,,,,1996.0,,Multi Family,,,,,,,,,,,,,,,,,
+155,9009 Vanderveer St,"Jamaica, NY 11428",889000,1,,,5.0,3.0,3.0,,,4.0,"Private,Attached,Garage",,1920.0,,Residential,Single Family Residence,,A,Active,,3290954,,Queens 29,,Queens 29,,Queens 29,0.08,10648,17,Q10648-0017,5144.0
+156,69-21 Manse St,"Forest Hills, NY 11375",849000,7,,,,,,,,,,,1930.0,,Single Family Home,,,,,,,,,,,,,,,,,
+157,31-31 138th St #4J,"Flushing, NY 11354",278000,1,,,1.0,1.0,1.0,,,,,,1956.0,,Residential,Stock Cooperative,,A,Active,,3291220,,Queens 25,,Queens 25,,Queens 25,,,,,
+158,92-25 215th Pl,"Queens Village, NY 11428",579000,3,,,3.0,2.0,2.0,,,1.0,"Private,Detached",,1930.0,,Residential,Single Family Residence,,A,Active,,3290794,,Queens 29,,Queens 29,,Queens 29,0.05,10632,56,Q10632-0056,4760.0
+159,10465 Springfield Blvd,"Jamaica, NY 11429",500000,146,,,,,,,,,Garage Detached,,2007.0,,Single Family Home,,,,,,10944125,,,,,,,,,,,
+160,58-41 79th Ave,"Ridgewood, NY 11385",799000,1,,,3.0,3.0,1.0,,Hardwood,1.0,"Private,Detached,Driveway,Garage",,1920.0,,Residential,Single Family Residence,,A,Active,,3291183,,Queens 24,,Queens 24,,Queens 24,0.06,3570,63,Q03570-0063,3996.0
+161,7344 177th St,"Fresh Meadows, NY 11366",1088000,6,,,,,,,,,,,1945.0,,Single Family Home,,,,,,,,,,,,,,,,,
+162,35-27 81st St #1K,"Jackson Heights, NY 11372",475000,1,,,,,,,,,None,,1930.0,,Coop,,,,,,,,,,,,,,,,,
+163,35-20 Leverich St #A503,"Jackson Heights, NY 11372",549000,1,,,1.0,1.0,1.0,,,,,,1964.0,,Residential,Condominium,,A,Active,,3291237,,Queens 30,,Queens 30,,Queens 30,,1270,1017,,3515.0
+164,68-69 218th St #2,"Oakland Gardens, NY 11364",319998,1,,,,,,,,,,,1914.0,,Coop,,,,,,,,,,,,,,,,,
+165,89-16 199th St,"Hollis, NY 11423",924900,1,,,3.0,3.0,2.0,,Hardwood,,"Private,Driveway,On Street",,1925.0,,Residential,Single Family Residence,,A,Active,,3291088,Ps 35 Nathaniel Woodhull,Queens 29,,Queens 29,,Queens 29,0.06,10487,44,Q10487-0044,5094.0
+166,144-60 Gravett Rd #1J,"Flushing, NY 11367",125000,21,,,1.0,1.0,1.0,,,,Parking Lot,,1955.0,,Residential,Stock Cooperative,,A,Active,,3286683,,Queens 25,,Queens 25,,Queens 25,,,,,
+167,6210 Woodside Ave #304,"Woodside, NY 11377",629000,1,,,2.0,1.0,1.0,,,,,,1927.0,,Residential,Condominium,,A,Active,,3291101,Ps 152 Gwendoline N Alleyne,Queens 30,,Queens 30,,Queens 30,,,,,3601.0
+168,90-59 56th Ave #2,"Elmhurst, NY 11373",635000,5,,,,,,,,,,,1962.0,,Coop,,,,,,,,,,,,,,,,,
+169,110-14 69th Rd,"Forest Hills, NY 11375",4599000,99,,,7.0,7.0,5.0,,Hardwood,2.0,"Private,Detached,On Street",,2012.0,,Residential,Single Family Residence,,A,Active,,3246430,,Queens 24,,Queens 24,,Queens 24,0.23,2230,12,Q02230-0012,33932.0
+170,5607 196th St,"Flushing, NY 11365",770000,99,,,3.0,1.0,1.0,,,1.0,"Private,Detached",,1945.0,,Residential,Single Family Residence,,A,Active,,3255752,,Queens 26,,Queens 26,,Queens 26,0.09,5683,57,,8224.0
+171,42-83 Hunter St #2A,"Long Island City, NY 11101",795000,2,,,,,,,,,,,2017.0,,Condo,,,,,,,,,,,,,,,,,
+172,32 Boulevard,"Malba, NY 11357",8988000,99,,,6.0,6.0,5.0,,Hardwood,3.0,"Private,Attached,Driveway,Garage,Off Street,On Street,Tandem",,2009.0,,Residential,Single Family Residence,,A,Active,,3254581,Ps 79 Francis Lewis,Queens 25,Jhs 194 William Carr,Queens 25,,Queens 25,0.18,4430,17,Q04430-0017,29094.0
+173,2343 100th St,"Flushing, NY 11369",899000,36,,,,,,,,,,,1950.0,,Single Family Home,,,,,,,,,,,,,,,,,
+174,140-23 181st St,"Springfield Gardens, NY 11413",970000,1,,,6.0,5.0,5.0,,Hardwood,1.0,"Private,Detached",,1925.0,,Residential Income,Multi Family,,A,Active,,3272148,,Queens 29,,Queens 29,,Queens 29,0.09,13039,26,Q13039-0026,8440.0
+175,64-34 102nd St #7M,"Rego Park, NY 11374",285000,1,,,1.0,1.0,1.0,,,,,,1952.0,,Residential,Stock Cooperative,,A,Active,,3291103,Ps 175 Lynn Gross Discovery (The),Queens 28,Jhs 157 Stephen A Halsey,Queens 28,,Queens 28,,,,,
+176,8080 Cypress Ave,"Glendale, NY 11385",550000,99,,,3.0,1.0,1.0,,Hardwood,,Private,,1935.0,,Residential,Single Family Residence,,A,Active,,3238106,,Queens 24,,Queens 24,,Queens 24,0.06,,,,1424.0
+177,64-33 184th St,"Fresh Meadows, NY 11365",880000,9,,,3.0,1.0,1.0,,,,Private,,1950.0,,Residential,Single Family Residence,,A,Active,,3289183,,Queens 26,,Queens 26,,Queens 26,0.09,,,,9044.0
+178,67-35 223rd Pl #A,"Oakland Gardens, NY 11364",349000,1,,,2.0,1.0,1.0,,,,"Common,Garage,Parking Lot,Off Street,On Street",,1960.0,,Residential,Stock Cooperative,,A,Active,,3290966,Ps 213 Carl Ullman School (The),Queens 26,Jhs 74 Nathaniel Hawthorne,Queens 26,,Queens 26,,,,,
+179,24-43 32nd St #A,"Astoria, NY 11102",1085000,5,,,,,,,,,,,1935.0,,Townhouse,,,,,,,,,,,,,,,,,
+180,76-26 266th St,"New Hyde Park, NY 11040",1249000,74,,,4.0,4.0,3.0,,Hardwood,,"Private,On Street",,2020.0,,Residential,Single Family Residence,,A,Active,,3276059,,Floral Park-Bellerose,,Floral Park-Bellerose,,Floral Park-Bellerose,0.09,8539,17,Q08539-0017,7596.0
+181,2029 29th St,"Long Island City, NY 11105",1395000,39,,,,,,,,,,,1940.0,,Single Family Home,,,,,,,,,,,,,,,,,
+182,226-15 130th Ave,"Springfield Gardens, NY 11413",665000,11,,,4.0,2.0,2.0,,Hardwood,1.0,"Private,Attached,Covered,Driveway",,1950.0,,Residential,Single Family Residence,,A,Active,,3288911,,Queens 29,,Queens 29,,Queens 29,0.08,12855,161,Q12855-0161,5300.0
+183,155-12 115th Dr,"Jamaica, NY 11434",569000,7,,,3.0,2.0,2.0,,,,"Private,Driveway",,1920.0,,Residential,Single Family Residence,,A,Active,,3289692,,Queens 29,,Queens 29,,Queens 29,0.05,,,,3532.0
+184,142-15 13th Ave,"Whitestone, NY 11357",3480000,11,,,6.0,6.0,5.0,,Hardwood,2.0,"Private,Attached",,2004.0,,Residential,Single Family Residence,,A,Active,,3288971,,Queens 25,,Queens 25,,Queens 25,0.26,4434,155,,18800.0
+185,59-11 Queens Blvd #4D,"Woodside, NY 11377",399000,2,,,,,,,,,,,1931.0,,Coop,,,,,,,,,,,,,,,,,
+186,14-02 Bell Blvd #223,"Bayside, NY 11360",475000,7,,,2.0,2.0,1.0,,,,Assigned,,1952.0,,Residential,Stock Cooperative,,A,Active,,3289778,Ps 169 Bay Terrace,Queens 25,Bell Academy,Queens 25,,Queens 25,,,,,
+187,227-23 88th Ave,"Queens Village, NY 11427",239900,24,,,2.0,1.0,1.0,,,,Waitlist,,1950.0,,Residential,Stock Cooperative,,A,Active,,3286013,,Queens 26,,Queens 26,,Queens 26,,,,,
+188,7015 Manse St,"Flushing, NY 11375",950000,13,,,3.0,2.0,2.0,,Hardwood,2.0,"Private,Detached,Garage",,1930.0,,Residential,Single Family Residence,,A,Active,,3288528,Ps 144 Col Jeromus Remsen,Queens 28,Jhs 190 Russell Sage,Queens 28,,Queens 28,0.07,3223,,,8414.0
+189,75-24 Bell Blvd #5A,"Oakland Gardens, NY 11364",580000,8,,,2.0,2.0,2.0,,Hardwood,,"Garage,Parking Lot",,1962.0,,Residential,Stock Cooperative,,A,Active,,3289516,Ps 205 Alexander Graham Bell,Queens 26,Jhs 74 Nathaniel Hawthorne,Queens 26,,Queens 26,,,,,
