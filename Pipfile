@@ -12,6 +12,8 @@ pytest = "*"
 pandas = "*"
 ipykernel = "*"
 requests = "*"
+xlrd = "*"
+openpyxl = "*"
 
 [dev-packages]
 

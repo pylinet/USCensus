@@ -1,0 +1,22 @@
+[
+    {
+        "name": "TOT_HSEPART_M",
+        "description": "Student participants in high school equivalency exam preparation Program (LEA): Calculated Male Total",
+        "type": "NUMERIC"
+    },
+    {
+        "name": "TOT_HSEPART_F",
+        "description": "Student participants in high school equivalency exam preparation Program (LEA): Calculated Female Total",
+        "type": "NUMERIC"
+    },
+    {
+        "name": "TOT_DISTEDENR_M",
+        "description": "Distance Education Enrollment (LEA): Calculated Male Total",
+        "type": "NUMERIC"
+    },
+    {
+        "name": "TOT_DISTEDENR_F",
+        "description": "Distance Education Enrollment (LEA): Calculated Female Total",
+        "type": "NUMERIC"
+    }
+]
