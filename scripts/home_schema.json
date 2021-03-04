@@ -4,7 +4,7 @@
         "description": "property",
         "type": "STRING",
         "mode": "NULLABLE"
-    }
+    },
     {
         "name": "address_street",
         "description": "street address of the property",

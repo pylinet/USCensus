@@ -13,6 +13,8 @@ pandas = "*"
 ipykernel = "*"
 requests = "*"
 matplotlib = "*"
+xlrd = "*"
+openpyxl = "*"
 
 [dev-packages]
 
