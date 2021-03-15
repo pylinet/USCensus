@@ -18,35 +18,36 @@ import config
 # Get Table Names from Census API
 
 # URL from Census API that lists all variables from American Community Survey as a JSON
-# these are Census Data Profile tables - the most detailed tables available from the ACS
+# these are Census Detailed tables - the most detailed tables available from the ACS
 
-variableURL = "https://api.census.gov/data/2019/acs/acs5/variables"
+detTabURL = "https://api.census.gov/data/2019/acs/acs5/variables"
+dataProfURL = "https://api.census.gov/data/2019/acs/acs5/profile/variables"
 
 
 # request method which will return data from URL
 
-censusVarNames = requests.request("GET", variableURL)
-
+censusDetTabVarNames = requests.request("GET", detTabURL)
+censusDatProfVarNames = requests.request("GET", dataProfURL)
 
 # check to see if request method was successful by printing 6th object from JSON
-# print(censusVarNames.json()[5])
+# print(censusDetTabVarNames.json()[5])
 
 
 # JSON data can be displayed in a pandas dataframe
 # JSON data from Census API has headers included
 
-censusData = pd.DataFrame(columns=censusVarNames.json()[0], data=censusVarNames.json()[1:])
-censusData = (censusData.sort_values(by=['name'], axis=0))
+censusDataDetailedTable = pd.DataFrame(columns=censusDetTabVarNames.json()[0], data=censusDetTabVarNames.json()[1:])
+censusDataDetailedTable = (censusData.sort_values(by=['name'], axis=0))
 
 # you must reset the index so that the first item is 0 rather than the random numbers the dataframe assigns to each object
-censusData.reset_index(drop = True, inplace = True)
-censusData
+censusDataDetailedTable.reset_index(drop = True, inplace = True)
+censusDataDetailedTable
 
 
 # filter table by name
 
 def filterByTableName(string):
-    x = censusData[censusData['name'].str.contains(string)]
+    x = censusDataDetailedTable[censusDataDetailedTable['name'].str.contains(string)]
     return x
 # filterByTableName('B1')
 
@@ -54,7 +55,7 @@ def filterByTableName(string):
 # filter table by label
 
 def filterByLabel(string):
-    x = censusData[censusData['label'].str.contains(string)]
+    x = censusDataDetailedTable[censusDataDetailedTable['label'].str.contains(string)]
     return x
 # filterByLabel('Median income')
 
@@ -62,13 +63,13 @@ def filterByLabel(string):
 # fitler table by list of table codes
 
 def filterByTableName(tableList):
-    df = censusData[censusData['name'].isin(tableList)]
+    df = censusDataDetailedTable[censusDataDetailedTable['name'].isin(tableList)]
     df.reset_index(drop = True, inplace = True)
     return df
 # fitler table by index
 
 def filterByIndex(indexList):
-    df = censusData[censusData.index.isin(indexList)]
+    df = censusDataDetailedTable[censusDataDetailedTable.index.isin(indexList)]
     df.reset_index(drop = True, inplace = True)
     return df
 
