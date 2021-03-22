@@ -37,7 +37,7 @@ censusDatProfVarNames = requests.request("GET", dataProfURL)
 # JSON data from Census API has headers included
 
 censusDataDetailedTable = pd.DataFrame(columns=censusDetTabVarNames.json()[0], data=censusDetTabVarNames.json()[1:])
-censusDataDetailedTable = (censusData.sort_values(by=['name'], axis=0))
+censusDataDetailedTable = (censusDataDetailedTable.sort_values(by=['name'], axis=0))
 
 # you must reset the index so that the first item is 0 rather than the random numbers the dataframe assigns to each object
 censusDataDetailedTable.reset_index(drop = True, inplace = True)
