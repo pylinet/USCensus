@@ -59,10 +59,17 @@ def filterByLabel(string):
     return x
 # filterByLabel('Median income')
 
+# filter by concept -- current doesnt work for some reason
+def filterByConcept(string):
+    x = censusDataDetailedTable[censusDataDetailedTable['concept'].str.contains(string)]
+    return x
+# filterByConcept('Age')
+
+
 
 # fitler table by list of table codes
 
-def filterByTableName(tableList):
+def filterByTableNameNewList(tableList):
     df = censusDataDetailedTable[censusDataDetailedTable['name'].isin(tableList)]
     df.reset_index(drop = True, inplace = True)
     return df
