@@ -9,6 +9,10 @@ import requests
 
 import config
 
+# import index
+
+import censusIndex
+
 
 # Census API Link References
 # "https://api.census.gov/data/2019/acs/acs5/profile?get=NAME,DP05_0001E&for=state:36&key={0}".format(config.MY_API_KEY)
@@ -45,11 +49,15 @@ censusDataDetailedTable
 
 
 # filter table by name
+# Useful way to filter!
+#https://api.census.gov/data/2019/acs/acs5/variables.html
+#rewrite as formula with variables as table name an a parameter to store index values in 
 
 def filterByTableName(string):
     x = censusDataDetailedTable[censusDataDetailedTable['name'].str.contains(string)]
     return x
-# filterByTableName('B1')
+# nameList = ['B01001_002E']
+# filterByTableNameNewList(nameList)
 
 
 # filter table by label
@@ -145,36 +153,50 @@ def nameList(dataFrame):
     return str(nameSingleString)
 
 
+
 def jsontodf(response):
     return pd.DataFrame(response.json()[1:], columns=response.json()[0])
 
 
-def dataProfSchDist(censusVariables,schoolDistricts):
+def dataProfSchDist(censusVariables,schoolDistricts,stateId):
     # first URL is for the detailed table. second URL is for the data profiles.
     # URL = "https://api.census.gov/data/2019/acs/acs5?get=NAME,{0}&for=school%20district%20(unified):{1}&in=state:36&key={2}".format(censusVariables,schoolDistricts,config.MY_API_KEY)
 
-    URL = "https://api.census.gov/data/2019/acs/acs5/profile?get=NAME,{0}&for=school%20district%20(unified):{1}&in=state:36&key={2}".format(censusVariables,schoolDistricts,config.MY_API_KEY)
+    URL = "https://api.census.gov/data/2019/acs/acs5/profile?get=NAME,{0}&for=school%20district%20(unified):{1}&in=state:{2}&key={3}".format(censusVariables,schoolDistricts,stateId,config.MY_API_KEY)
     return requests.request("GET", URL)
 
+def groupData(censusVariables,schoolDistricts,stateId):
+    URL = "https://api.census.gov/data/2019/acs/acs1?get=NAME,group({0})&for=school%20district%20(unified):{1}&in=state:{2}&key={23".format(censusVariables,schoolDistricts,stateId,config.MY_API_KEY)
+    return requests.request("GET", URL)
 
-
-def deTabSchDist(censusVariables,schoolDistricts):
+def deTabSchDist(censusVariables,schoolDistricts,stateId):
     # first URL is for the detailed table. second URL is for the data profiles.
     # URL = "https://api.census.gov/data/2019/acs/acs5?get=NAME,{0}&for=school%20district%20(unified):{1}&in=state:36&key={2}".format(censusVariables,schoolDistricts,config.MY_API_KEY)
 
-    URL = "https://api.census.gov/data/2019/acs/acs5/?get=NAME,{0}&for=school%20district%20(unified):{1}&in=state:36&key={2}".format(censusVariables,schoolDistricts,config.MY_API_KEY)
+    URL = "https://api.census.gov/data/2019/acs/acs5/?get=NAME,{0}&for=school%20district%20(unified):{1}&in=state:{2}&key={3}".format(censusVariables,schoolDistricts,stateId,config.MY_API_KEY)
     return requests.request("GET", URL)
 
 
 # Mega Formula
 
 
-def dataProfile(cenVar, schDisID):
-    x = dataProfSchDist(cenVar,schDisID)
+
+def dataProfile(nameAsList, schDisID, stateId):
+    x = dataProfSchDist(nameAsList,schDisID,stateId)
     return jsontodf(x)
 
-def detailedTable(cenVar, schDisID):
-    x = deTabSchDist(cenVar,schDisID)
+# Getting Census Data: Data Profiles
+# selectedDatProVar = 'DP05_0002E,DP05_0003E'
+# dataProfile(selectedDatProVar,NYGEOID).head()
+
+def detailedTable(nameAsList, schDisID, stateId):
+    x = deTabSchDist(nameAsList,schDisID,stateId)
+    return jsontodf(x)
+# selectedDetTabVar = 'B01001_002E,B01001_026E,B19013_001E'
+# detailedTable(selectedDetTabVar,NYGEOID,36).head(1)
+
+def grpTable(nameAsList, schDisID, stateId):
+    x = groupData(nameAsList,schDisID,stateId)
     return jsontodf(x)
 
 # take values in a data frame column and turn to list
@@ -189,3 +211,37 @@ def dfColDataToInt(dataFrame1,dataFrame2,columnName):
     x = dataFrame1[str(columnName)].tolist()
     dataFrame2[x] = dataFrame2[x].astype(int)
     return dataFrame2
+
+# transpose data because creating data frame
+# puts rows as each data type rather than each column
+# we want each row to be a diff place
+
+def transposeDf(dataFrameName):
+    dfT = dataFrameName.transpose()
+    dfT.columns = dfT.iloc[0]
+    dfT=dfT.reset_index()
+    del dfT['index']
+    return dfT
+
+# append school district list and census data
+
+def appendDf(dataFrame1,dataFrame2):
+    newDf = dataFrame1.append(dataFrame2,sort=True)
+    newDf.insert(0, "NAME", newDf.pop("NAME"))
+    newDf.insert(1, "school district (unified)", newDf.pop("school district (unified)"))
+    newDf.insert(2, "state", newDf.pop("state"))
+    return newDf
+
+# combines several formulas to make a dataframe which displays
+# all census variables you want to lookup data for
+# this formula only works if there is a list input for cenIndexList
+
+def dataFrame(dataFrameName,cenIndexList,schDisID,stateId):
+    dataFrameName = filterByIndex(cenIndexList)
+    nameAsList = nameList(dataFrameName)
+    dataFrame1 = transposeDf(dataFrameName)
+    dataFrame2 = detailedTable(nameAsList,schDisID,stateId)
+    x = appendDf(dataFrame1,dataFrame2)
+    return x
+
+
