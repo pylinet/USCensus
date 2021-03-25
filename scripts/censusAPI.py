@@ -39,7 +39,6 @@ def mergedSchoolDist(df1, df2):
     return CountiesGEOID
 
 
-
 # Get all GEOIDs in a single list
 # Make all GEOIDs into a string only
 # Need to be a single string in order to run Census API call
@@ -117,6 +116,12 @@ def dataProfile(nameAsList,schDisID,stateId):
     # selectedDatProVar = 'DP05_0002E,DP05_0003E'
     # dataProfile(selectedDatProVar,NYGEOID,36).head()
 
+def deTabSchDistYear(year,nameAsList,schDisID,stateId):
+    URL = "https://api.census.gov/data/{0}/acs/acs5/?get=NAME,{1}&for=school%20district%20(unified):{2}&in=state:{3}&key={4}".format(year,nameAsList,schDisID,stateId,config.MY_API_KEY)
+    return requests.request("GET", URL)
+    # selectedDatProVar = 'DP05_0002E,DP05_0003E'
+    # dataProfile(selectedDatProVar,NYGEOID,36).head()
+
 def deTabSchDist(nameAsList,schDisID,stateId):
     URL = "https://api.census.gov/data/2019/acs/acs5/?get=NAME,{0}&for=school%20district%20(unified):{1}&in=state:{2}&key={3}".format(nameAsList,schDisID,stateId,config.MY_API_KEY)
     return requests.request("GET", URL)
@@ -127,7 +132,9 @@ def detailedTable(nameAsList,schDisID,stateId):
     x = deTabSchDist(nameAsList,schDisID,stateId)
     return jsontodf(x)
 
-
+def detailedTableYear(year,nameAsList,schDisID,stateId):
+    x = deTabSchDistYear(year,nameAsList,schDisID,stateId)
+    return jsontodf(x)   
 # Take values in a data frame column and turn to list
 
 def dfColToList(dataFrame,columnName):
@@ -140,14 +147,13 @@ def dfColDataToInt(dataFrame,columnName):
     dataFrame[columnName] = dataFrame[columnName].astype(int)
     return dataFrame
 
-
-def cenDftranspose(indexList,descriptionList,schDisID,stateId):
+def cenDftranspose(year,indexList,descriptionList,schDisID,stateId):
     df = filterByIndex(indexList)
     nameAsList = nameList(df)
     df.insert(loc=0, column='description', value=descriptionList)
     dfDict = pd.Series(df.description.values,index=df.name).to_dict()
     dataFrame = df.transpose()
-    dfState = detailedTable(nameAsList,schDisID,stateId)
+    dfState = detailedTableYear(year,nameAsList,schDisID,stateId)
     dfState.rename(columns=dfDict,inplace = True)
     firstColumn = dfState.pop('state')
     dfState.insert(0, 'state', firstColumn)
@@ -156,20 +162,24 @@ def cenDftranspose(indexList,descriptionList,schDisID,stateId):
     dfState.iloc[:, 3:,] = dfState.iloc[:, 3:,].apply(pd.to_numeric)
     return dfState
 
-def houseYrBlt(schDisID,stateId):
+def houseYrBlt(year,schDisID,stateId):
     indexList = censusIndex.houseYrBlt
     descriptionList = censusIndex.houseYrBltDescrp
-    dfNew = cenDftranspose(indexList,descriptionList,schDisID,stateId)
+    dfNew = cenDftranspose(year,indexList,descriptionList,schDisID,stateId)
     return dfNew
 
 def householdSize(schDisID,stateId):
     indexList = censusIndex.householdSize
     descriptionList = censusIndex.householdSizeDescrp
     dfNew=cenDftranspose(indexList,descriptionList,schDisID,stateId)
+    dfNew['Average Owner Occupied Household Size'] = (dfNew['Owner Occupied']/dfNew['Average Household Size'])
+    dfNew['Average Owner Occupied Household Size'] = (dfNew['Renter Occupied']/dfNew['Average Household Size'])
     return dfNew
 
-def houseType(schDisID,stateId):
+def houseOwnership(schDisID,stateId):
     indexList = censusIndex.houseType
-    descriptionList = censusIndex.houseTypeDescrp
+    descriptionList = censusIndex.houseOwnershipDescrp
     dfNew=cenDftranspose(indexList,descriptionList,schDisID,stateId)
+    dfNew['Percentage of Owner Occupied'] = (dfNew['Owner Occupied']/dfNew['Total Occupied Housing Units'])
+    dfNew['Percentage of Renter Occupied'] = (dfNew['Renter Occupied']/dfNew['Total Occupied Housing Units'])
     return dfNew

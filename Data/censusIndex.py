@@ -31,13 +31,13 @@ houseMedValueDescrp = ['Median Value', 'Built 2014 or Later', 'Built 2010 to 201
 # Household Type (Rent v Own)
 
 
-houseType = 20151,20152,20153
-houseTypeDescrp = ['Total Occupied Housing Units', 'Owner Occupied', 'Renter Occupied']
+houseOwnership = 20151,20152,20153
+houseOwnershipDescrp = ['Total Occupied Housing Units', 'Owner Occupied', 'Renter Occupied']
 
 # Household Size by Owner Occupied
 
 householdSize = 20171,20172,20173
-householdSizeDescrp = ['Average Household Size', 'Owner Occupied', 'Render Occupied']
+householdSizeDescrp = ['Average Household Size', 'Owner Occupied', 'Renter Occupied']
 
 # Year Structure Built
 
