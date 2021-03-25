@@ -147,6 +147,8 @@ def dfColDataToInt(dataFrame,columnName):
     dataFrame[columnName] = dataFrame[columnName].astype(int)
     return dataFrame
 
+# Only works from year 2015 onward
+
 def cenDftranspose(year,indexList,descriptionList,schDisID,stateId):
     df = filterByIndex(indexList)
     nameAsList = nameList(df)
